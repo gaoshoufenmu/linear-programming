@@ -26,7 +26,7 @@ $$ \lambda \mathbf x + (1 - \lambda) \mathbf y \in S $$
 
 $$ \alpha \mathbf x + \beta \mathbf y \in S $$
 
-那么$$ S $$ 称为$$ E^n $$ 的一个子空间。$$ S $$ 对数乘和加法封闭，且 $$ 0 \le dim\(S\) \le n $$ :
+那么$$ S $$ 称为$$ E^n $$ 的一个子空间。$$ S $$ 对数乘和加法封闭，且 $$ 0 \le dim(S) \le n $$ :
 
 > $$ dim(S) = 0 \quad \mapsto \quad S $$ 表示一个点
 >
@@ -48,13 +48,13 @@ $$ \lbrace \mathbf x \| \mathbf x \bot L \rbrace = \lbrace \mathbf x \| \mathbf 
 
 * 有以下定理：
 
-* $$ S $$ 是 $$ E^n $$ 的子空间 $$ \Leftrightarrow \quad S $$ 是过原点的仿射集
+1. $$ S $$ 是 $$ E^n $$ 的子空间 $$ \Leftrightarrow \quad S $$ 是过原点的仿射集
 
-* $$ \forall $$ 非空仿射集 $$ S $$ 都平行于唯一的子空间 $$ L $$
+2. $$ \forall $$ 非空仿射集 $$ S $$ 都平行于唯一的子空间 $$ L $$
 
-* 给定 $$ b \in E^1, \mathbf a \in E^n, \mathbf a \ne \mathbf 0 $$ ，那么 $$ H = \lbrace \mathbf x \| \mathbf {ax} = b \rbrace $$ 表示 $$ E^n $$ 中一个超平面
+3. 给定 $$ b \in E^1, \mathbf a \in E^n, \mathbf a \ne \mathbf 0 $$ ，那么 $$ H = \lbrace \mathbf x | \mathbf {ax} = b \rbrace $$ 表示 $$ E^n $$ 中一个超平面
 
-* 给定实矩阵 $$ A\_{mn} $$ 和 $$ \mathbf b \in E^m $$，那么 $$ K = \lbrace \mathbf x \in E^n \| A \mathbf x = \mathbf b \rbrace $$ 表示 $$ E^n $$ 中的一个仿射集
+4. 给定实矩阵 $$ A_{mn} $$ 和 $$ \mathbf b \in E^m $$，那么 $$ K = \lbrace \mathbf x \in E^n | A \mathbf x = \mathbf b \rbrace $$ 表示 $$ E^n $$ 中的一个仿射集
 
 如果开始不容易理解，可以令 $$ n = 2 $$，从而在二维中去想象一下，比如上面定理第三条，此时 $$ H $$ 就是一个直线。
 
@@ -75,4 +75,14 @@ $$ \lambda \mathbf x + (1 - \lambda) \lambda \in C $$
 下面这个则不是凸集，因为图中线段的两个端点在集合中，而线段中存在不在集合中的点
 
 ![](/assets/nonconvex.png)
+
+$$ E^n $$ 中有限个闭半空间的交是凸集，这个结论很好理解，一个闭半空间由一个超平面切割 $$ E^n $$ 得到，根据上面定理第三条，这个闭半空间可以表示为$$ \lbrace \mathbf x | \mathbf {ax} \le b \rbrace $$，于是一组有限个闭半空间可以用同样数量（假设为$$ m $$个）的不等式表示，即 $$ \lbrace \mathbf x | A \mathbf x \le \mathbf b \rbrace $$，而不等式组等价于$$D = \lbrace \mathbf x | A \mathbf x = \mathbf {b, x} \ge \mathbf 0 \rbrace $$，于是证明这个区域是一个凸集即可：
+
+设$$ \mathbf {x, y} \in D, \mathbf w = \lambda \mathbf x + (1 - \lambda)\mathbf y, \lambda \in (0, 1) $$，因为$$ \mathbf {x,y}, \lambda, (1 - \lambda) \ge \mathbf 0 $$，故$$ \mathbf w \ge \mathbf 0 $$，又$$ A \mathbf x = \mathbf b, A \mathbf y = \mathbf b $$，所以
+
+$$ A \mathbf w = \lambda A \mathbf x + (1 - \lambda)A \mathbf y = \lambda \mathbf b + (1 - \lambda) \mathbf b = \mathbf b $$
+
+于是，$$ \mathbf w \in D $$，证毕。
+
+
 
