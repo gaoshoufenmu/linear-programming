@@ -70,7 +70,7 @@ $$ \lambda \mathbf x + (1 - \lambda) \lambda \in C $$
 
 以下为三个凸集图形，你们可以感受一下
 
-![](/assets/import.png)
+![](/assets/import.png)![](/assets/convex.png)
 
 下面这个则不是凸集，因为图中线段的两个端点在集合中，而线段中存在不在集合中的点
 
