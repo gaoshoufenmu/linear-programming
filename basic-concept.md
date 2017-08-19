@@ -12,13 +12,13 @@ $$\quad \quad \quad \mathbf x \ge \mathbf 0$$
 
 $$ E^n $$ 表示 $$ n $$ 维欧式空间，设 $$ \mathbf x, \mathbf y $$ 是 $$ E^n $$ 中任意不同的两个点，则
 
-$$ P = \lbrace \lambda \mathbf x + \(1 - \lambda\) \mathbf y \| \lambda \in E^1\rbrace $$
+$$ P = \lbrace \lambda \mathbf x + (1 - \lambda) \mathbf y | \lambda \in E^1\rbrace $$
 
 称为通过 $$ \mathbf x, \mathbf y $$ 的直线
 
 对于集合 $$ S \subseteq E^n, \forall \mathbf {x, y} \in S, \lambda \in E^1 $$，均有
 
-$$ \lambda \mathbf x + \(1 - \lambda\) \mathbf y \in S $$
+$$ \lambda \mathbf x + (1 - \lambda) \mathbf y \in S $$
 
 那么 $$ S $$ 称为仿射集，也就是说，$$ S $$ 中的任意两点的直线上的所有点仍在$$ S $$ 中
 
@@ -28,17 +28,17 @@ $$ \alpha \mathbf x + \beta \mathbf y \in S $$
 
 那么$$ S $$ 称为$$ E^n $$ 的一个子空间。$$ S $$ 对数乘和加法封闭，且 $$ 0 \le dim\(S\) \le n $$ :
 
-> $$ dim\(S\) = 0 \quad \mapsto \quad S $$ 表示一个点
+> $$ dim(S) = 0 \quad \mapsto \quad S $$ 表示一个点
 >
-> $$ dim\(S\) = 1 \quad \mapsto \quad S $$ 表示一条线
+> $$ dim(S) = 1 \quad \mapsto \quad S $$ 表示一条线
 >
-> $$ dim\(S\) = 2 \quad \mapsto \quad S $$ 表示一个面
+> $$ dim(S) = 2 \quad \mapsto \quad S $$ 表示一个面
 >
 > $$ \cdot \cdot \cdot$$
 >
-> $$ dim\(S\) = n -1 \quad \mapsto \quad S $$ 表示一个超平面
+> $$ dim(S) = n -1 \quad \mapsto \quad S $$ 表示一个超平面
 >
-> $$ dim\(S\) = n \quad \mapsto \quad S $$ 表示 $$ E^n $$
+> $$ dim(S) = n \quad \mapsto \quad S $$ 表示 $$ E^n $$
 
 $$ L $$ 是子空间，则集
 
