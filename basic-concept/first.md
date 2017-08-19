@@ -42,7 +42,7 @@ $$ \alpha \mathbf x + \beta \mathbf y \in S $$
 
 $$ L $$ 是子空间，则集
 
-$$ \lbrace \mathbf x \| \mathbf x \bot L \rbrace = \lbrace \mathbf x \| \mathbf x \bot \mathbf y, \forall \mathbf y \in L \rbrace $$
+$$ \lbrace \mathbf x | \mathbf x \bot L \rbrace = \lbrace \mathbf x | \mathbf x \bot \mathbf y, \forall \mathbf y \in L \rbrace $$
 
 称为 $$ L $$ 的正交补，记作 $$ L^{\bot} $$ ，且有 $$ dim(L) + dim(L^{\bot}) = n, \quad (L^{\bot})^{\bot} = L$$
 
