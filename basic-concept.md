@@ -44,7 +44,7 @@ $$ L $$ 是子空间，则集
 
 $$ \lbrace \mathbf x \| \mathbf x \bot L \rbrace = \lbrace \mathbf x \| \mathbf x \bot \mathbf y, \forall \mathbf y \in L \rbrace $$
 
-称为 $$ L $$ 的正交补，记作 $$ L^{\bot} $$ ，且有 $$ dim\(L\) + dim\(L^{\bot}\) = n, \quad \(L^{\bot}\)^{\bot} = L$$
+称为 $$ L $$ 的正交补，记作 $$ L^{\bot} $$ ，且有 $$ dim(L) + dim(L^{\bot}) = n, \quad (L^{\bot})^{\bot} = L$$
 
 * 有以下定理：
 
@@ -62,9 +62,9 @@ $$ \lbrace \mathbf x \| \mathbf x \bot L \rbrace = \lbrace \mathbf x \| \mathbf 
 
 * 凸集
 
-对 $$ C \subseteq E^n, \forall \mathbf {x, y} \in C, \lambda \in \(0, 1\) $$，均有
+对 $$ C \subseteq E^n, \forall \mathbf {x, y} \in C, \lambda \in (0, 1) $$，均有
 
-$$ \lambda \mathbf x + \(1 - \lambda\) \lambda \in C $$
+$$ \lambda \mathbf x + (1 - \lambda) \lambda \in C $$
 
 则 $$ C $$ 称为凸集，直观的讲就是 $$ C $$ 中任意两点的连接形成线段上的任意一点仍在 $$ C $$ 中
 
