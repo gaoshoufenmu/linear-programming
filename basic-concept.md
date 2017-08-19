@@ -70,9 +70,9 @@ $$ \lambda \mathbf x + (1 - \lambda) \lambda \in C $$
 
 以下为三个凸集图形，你们可以感受一下
 
-![](https://gaoshoufenmu.gitbooks.io/linear-programming/content/assets/import.png)
+![](/assets/import.png)
 
 下面这个则不是凸集，因为图中线段的两个端点在集合中，而线段中存在不在集合中的点
 
-![](https://gaoshoufenmu.gitbooks.io/linear-programming/content/assets/import2.png)
+![](/assets/nonconvex.png)
 
