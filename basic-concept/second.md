@@ -18,9 +18,23 @@ $$ C = \lbrace \mathbf x | x_1 + x_2 = 1, x_1,x_2,x_3 \ge 0 \rbrace$$的界面
 
 一般地，凸集$$C $$ 的一维界面称为**边**，零维界面称为**极点**，位于同一条边上的极点是相邻的。对极点而言，并不存在满足上述界面定义中的那个$$\mathbf u$$，尽管如此，却不违背界面定义中的条件，所以极点也是一种界面
 
-方向
+* 方向
 
 假设$$ C \neq \varnothing $$ 是$$E^n$$中的一个凸集，给定一个$$ \mathbf d \in E^n, \mathbf d \neq \mathbf 0 $$，若对 $$ \forall \mathbf x \in C, \lambda \gt 0$$，均有 $$\mathbf x + \lambda \mathbf d \in C$$，则称$$\mathbf d$$ 是$$C$$ 的一个方向
 
-显然$$C$$ 的方向不是任意的，即，$$\mathbf d $$ 不是任意的，而是要符合定义中的条件，注意$$ \mathbf x + \lambda \mathbf d $$ 是将点 $$\mathbf x$$移动，即任意一点移动后仍在原凸集$$C$$ 中，这样的$$\mathbf d$$ 便是其方向
+显然$$C$$ 的方向不是任意的，即，$$\mathbf d $$ 不是任意的，而是要符合定义中的条件，注意$$ \mathbf x + \lambda \mathbf d $$ 是将点 $$\mathbf x$$移动，每个维度移动$$\lambda \mathbf d_i$$，即任意一点移动后仍在原凸集$$C$$ 中，这样的$$\mathbf d$$ 便是其方向
+
+对于我们前面关注的非空凸集C的形式，可以写为$$C = \lbrace \mathbf x | A \mathbf x = \mathbf {b, x} \ge \mathbf 0 \rbrace \ne \varnothing$$，现在我们来研究一下其方向$$\mathbf d$$
+
+设移动后的点为$$ \mathbf y = \mathbf x + \lambda \mathbf d$$，根据方向的定义有，$$\mathbf y \in C$$，故
+
+$$\begin{cases}  A \mathbf  x + \lambda A \mathbf d = \mathbf b \\ \mathbf x + \lambda \mathbf d \ge \mathbf 0 \end{cases}$$
+
+由于$$\mathbf x \ge \mathbf 0, \lambda \gt 0$$ 是任意的，所以根据上述第二个式子只能是$$ \mathbf d \ge \mathbf 0$$，再根据方向的定义，
+
+$$\mathbf d \in E^n, \mathbf d \ne \mathbf 0$$
+
+故$$ \mathbf d \gt \mathbf 0$$，再根据上述第一个式子以及本身$$\mathbf x$$ 就满足$$A \mathbf x = \mathbf b $$，于是，$$A \mathbf d = \mathbf b$$，
+
+总结，$$\mathbf d$$ 是$$C$$ 的方向的充要条件是：$$\mathbf d \gt \mathbf 0, A \mathbf d = \mathbf b$$
 
