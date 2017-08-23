@@ -14,7 +14,7 @@ $$\mathbf x_B = B^{-1} \mathbf b - B^{-1}N \mathbf x_N$$
 
 $$\mathbf x = (\mathbf x_B, \mathbf x_N)^T = (B^{-1} \mathbf b, \mathbf 0)^T$$
 
-上面我们讲到，$$B$$ 不一定是唯一的，只要在$$A$$ 中能选取 $$m$$ 个线性无关的列向量便能组成一个满秩矩阵，从而可作为一个基。所以对于$$\mathbf x$$ 的可行解，记作$$\overline {\mathbf x}$$，当且仅当其正分量所对应于$$A$$ 中的列向量线性无关，$$\overline {\mathbf x}$$ 就是基本可行解。这里$$\overline {\mathbf x}$$ 是可行解是一个前提条件，且根据要求$$\mathbf x \ge \mathbf 0$$ ，即 $$\mathbf x$$ 的分量非正即0，我们假设$$ \mathbf x$$ 的前
+上面我们讲到，$$B$$ 不一定是唯一的，只要在$$A$$ 中能选取 $$m$$ 个线性无关的列向量便能组成一个满秩矩阵，从而可作为一个基。所以对于$$\mathbf x$$ 的可行解，记作$$\overline {\mathbf x}$$，当且仅当其正分量所对应于$$A$$ 中的列向量线性无关，$$\overline {\mathbf x}$$ 就是基本可行解。这里$$\overline {\mathbf x}$$ 是可行解是一个前提条件，且根据要求$$\mathbf x \ge \mathbf 0$$ ，即 $$\mathbf x$$ 的分量非正即0，我们假设$$ \mathbf x$$ 的前$$k$$ 个分量非0，那么，根据$$\mathbf x$$ 是基本可行解，其$$\mathbf x_N = \mathbf 0$$ 非基变量数量为$$n -m $$，故$$ k \le m$$。
 
 有以下几个定理，
 
