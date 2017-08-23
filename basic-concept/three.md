@@ -20,6 +20,12 @@ $$\mathbf x = (\mathbf x_B, \mathbf x_N)^T = (B^{-1} \mathbf b, \mathbf 0)^T$$
 
 1. $$\overline {\mathbf x}$$ 是基本可行解当且仅当其是凸集$$C$$ 的极点
 2. 若一个标准形的LP问题有可行解，则其必定有基本可行解
+3. 设$$C = \lbrace \mathbf x | A \mathbf x = \mathbf {b, x} \ge \mathbf 0 \rbrace $$的方向$$\mathbf d$$ 有$$k$$ 个非零分量，则$$\mathbf d $$ 为极方向当且仅当$$\mathbf d $$ 的非零分量对应的列向量组秩为$$k-1$$
+4. $$\mathbf d$$ 为凸集$$C$$ 的极方向当且仅当它是$$C$$ 的某个半直线界面的方向
+5.  若$$C = \lbrace \mathbf x | A \mathbf x = \mathbf {b, x} \ge \mathbf 0 \rbrace$$为无界集，则$$C$$ 存在方向，且有极方向
+6.  设$$C = \lbrace \mathbf x | A \mathbf x = \mathbf {b, x} \ge \mathbf 0 \rbrace$$ 所有极点为$$\mathbf x_1, ...,  \mathbf x_k$$，极方向为$$\mathbf d^1, ..., \mathbf d^l$$，则 $$\mathbf x \in C$$ 当且仅当存在一组$$\lambda_i, \mu_l$$，满足
+
+
 
 
 
